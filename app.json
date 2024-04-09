@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "my-app",
-    "slug": "my-app",
+    "name": "IOTDATA",
+    "slug": "IOtData",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,6 +11,20 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "plugins": [
+      [
+        "@config-plugins/react-native-ble-plx",
+        {
+          "isBackgroundEnabled": true,
+          "modes": ["peripheral", "central"],
+          "bluetoothAlwaysPermission": "Allow $(PRODUCT_NAME) to connect to bluetooth devices"
+        }
+      ],
+      [
+        "react-native-ble-plx"
+      ]
+    ],
+    
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -21,10 +35,21 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BLUETOOTH_CONNECT"
+      ],
+      "package": "com.abderrahmenothman.IOtData"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2cd5a274-43b8-489a-9ff4-1fa37b376186"
+      }
     }
   }
 }
