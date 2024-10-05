@@ -46,12 +46,13 @@
 
 ## :dart: About ##
 
-Oilformed is a mobile application that connects ESP32 devices via Bluetooth (BLE), sends WiFi credentials to the ESP32 for server connection, and stores temperature and humidity data on the server. The app displays the data on a homepage with real-time charts.
+Oilformed is a mobile application that connects ESP32 devices via Bluetooth (BLE), sends WiFi credentials to the ESP32 for server connection, and stores temperature and humidity data on a Django server. The app displays the data on a homepage with real-time charts. The ESP32 device is programmed using Arduino code to handle data transmission.
 
 ## :sparkles: Features ##
 
 :heavy_check_mark: Connect ESP32 devices via Bluetooth;\
 :heavy_check_mark: Send WiFi credentials to ESP32;\
+:heavy_check_mark: Store temperature and humidity data on the Django server;\
 :heavy_check_mark: Display real-time temperature and humidity charts.
 
 ## :rocket: Technologies ##
@@ -63,6 +64,9 @@ The following tools were used in this project:
 - [React](https://pt-br.reactjs.org/)
 - [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [Django](https://www.djangoproject.com/) (for backend data storage)
+- [Arduino](https://www.arduino.cc/) (for ESP32 code)
+
 
 ## :white_check_mark: Requirements ##
 
@@ -77,12 +81,13 @@ $ git clone https://github.com/Piiii31/IOT-DATA-Visualization-Frontend
 $ cd my-app
 
 # Install dependencies
-$ yarn
+$ npm install
 
 # Run the project
-$ yarn start
+$ npm run start
 
-# The server will initialize in the <http://localhost:3000>
+# Here is the link to the Django source code and the ESP32 code: [Django](https://github.com/Piiii31/IOT-DATA-Visualization-Backend-CodeESP)
+
 
 
 Made with :heart: by <a href="https://github.com/Piiii31" target="_blank">Piiii31</a>
