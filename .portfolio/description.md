@@ -1,0 +1,1 @@
+**Oilformed** is a **mobile application** that connects ESP32 devices via Bluetooth (BLE), sends WiFi credentials to the ESP32 for server connection, and stores temperature and humidity data on a Django server. The app displays the data on a homepage with real-time charts. The ESP32 device is programmed using Arduino code to handle data transmission.

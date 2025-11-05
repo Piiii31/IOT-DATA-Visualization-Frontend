@@ -1,0 +1,7 @@
+{
+  "frontend": ["Expo","React","React Native","TypeScript"],
+  "backend": ["Node.js", "Django"],
+  "database": ["PostgreSQL"],
+  "others": ["Arduino"]
+}
+
